@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>S-13</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body>
+<div ng-app="app">
+    <div ng-controller="appCtrl">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="un">
+					<input ng-model="valeur" placeholder="dépense" class ="input"/>
+					<button ng-click="addDepense()">Ajouter dépense</button>
+					<ul>
+						<li ng-repeat="depense in depenses">
+							{{ depense.valeur }} <span ng-click="rmDepense($index)" class ="delete">x</span>
+						</li>
+					</ul>
+					<strong>Total des dépenses : {{ total }}</strong>
+				</div>
+			
+				<div id="deux">
+					<input ng-model="tache" placeholder="tache" class ="input"/>
+					 <a class="delete" href="" data-ng-click="clearSearch()">x</a>
+					<button ng-click="addTache()">Ajouter une tache</button>
+					<ul>	
+						<li ng-repeat="gain in liste">
+							{{ gain.tache }} <span ng-click="del($index)" class ="delete">X</span>
+						</li>
+					</ul>
+					<strong>Nombre de tâche(s): {{total2}}</strong>
+				</div>	
+			
+			</div>
+
+		</div>	
+	</div>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

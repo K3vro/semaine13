@@ -1,0 +1,28 @@
+.domaine{
+	text-align:center;
+	color:white;
+	font-size:40px;
+}
+.quiz{
+	color: white;
+	width: 500px;
+	margin: 50px;
+	color:white;
+	padding-left:20px;
+	border: 2px solid black;
+	background-color:gray;
+}
+.resultat{
+	width: 500px;
+	margin: 50px;
+	color:white;	
+}
+.solution{
+	width: 500px;
+	margin: 50px;
+	color:white;
+}
+body{
+	margin-top:200px;
+}
+
