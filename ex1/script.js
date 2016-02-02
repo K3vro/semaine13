@@ -68,7 +68,7 @@ angular.module('quiz',[])
 			 categorie:"Jeux video",
 			 question:"Qui est le best sur counter strike?",
 			 reponseA:"K3vroJESUS",
-			 reponseB:"Ephrum",
+			 reponseB:"Dief77",
 			 reponseC:"Phalanx",
 			 reponseD:"Poutine",
 			 correct:"reponseA",
